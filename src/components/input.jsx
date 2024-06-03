@@ -17,7 +17,12 @@ import {Col,Form,Row} from 'react-bootstrap';
 
 const InputInvoice =({object,onChange})=>{
   object=Object.values(object);
-  const row = object.reduce((result,_,index)=>(index % 2 === 0 && result.push(object.slice(index,index+2)), result),[]);
+  const row = object.reduce((result, _, index) => {
+    if (index % 2 === 0) {
+      result.push(object.slice(index, index + 2));
+    }
+    return result;
+  }, []);
   
   return row.map((row,rowIndex)=>(
     <Row  lg={row.length % 2 === 0 ?2:1} sm={1} key={rowIndex}>
