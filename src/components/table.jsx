@@ -1,6 +1,19 @@
 import {React,useState,useEffect} from "react";
 import {Table,Button} from 'react-bootstrap';
-import { dataTableProduct } from "../data";
+
+/**
+ * TableProducts Component
+ *
+ * Este componente muestra una tabla de productos con la información proporcionada en el objeto.
+ * Proporciona la capacidad de eliminar un producto y devuelve el índice del producto eliminado.
+ * 
+ * Props:
+ * - object: Un array de objetos que representa los productos a mostrar en la tabla.
+ * - returnData: Una función que se llama cuando se elimina un producto de la tabla.
+ * 
+ * Ejemplo de uso:
+ * <TableProducts object={productos} returnData={handleDelete} />
+ */
 const TableProducts=({object,returnData})=>{
   
   const [data , setData] = useState(object)
@@ -39,38 +52,3 @@ const TableProducts=({object,returnData})=>{
 }
 export default TableProducts;
 
-// function BasicExample() {
-//   return (
-//     <Table striped bordered hover>
-//       <thead>
-//         <tr>
-//           <th>I</th>
-//           <th>First Name</th>
-//           <th>Last Name</th>
-//           <th>Username</th>
-//         </tr>
-//       </thead>
-//       <tbody>
-//         <tr>
-//           <td>1</td>
-//           <td>Mark</td>
-//           <td>Otto</td>
-//           <td>@mdo</td>
-//         </tr>
-//         <tr>
-//           <td>2</td>
-//           <td>Jacob</td>
-//           <td>Thornton</td>
-//           <td>@fat</td>
-//         </tr>
-//         <tr>
-//           <td>3</td>
-//           <td colSpan={2}>Larry the Bird</td>
-//           <td>@twitter</td>
-//         </tr>
-//       </tbody>
-//     </Table>
-//   );
-// }
-
-// export default BasicExample;

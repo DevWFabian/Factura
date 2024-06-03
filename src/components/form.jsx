@@ -4,17 +4,26 @@ import InputInvoice from './input';
 import validateHandler from "../services/validateFields"
 import {GetDataObject} from '../services/getData';
 
+/**
+ * FormExample Component
+ *
+ * Este componente muestra un formulario para ingresar datos de un producto.
+ * 
+ * Props:
+ * - object: Un objeto que contiene la información del producto.
+ * - returnData: Una función que se llama para devolver los datos del formulario al componente padre.
+ * 
+ * @author: Wilson Fabian Cruz Andrade
+ */
 
 function FormExample({object,returnData}) {
-  const [validated, setValidated] = useState(false);
-  const [dataInput, setDataInput] = useState({})
-  const [count, setCount] = useState(2)
+  const [validated, setValidated] = useState(false);// Estado  que controla el estilo de boostrap para validar  los campos
+  const [dataInput, setDataInput] = useState({})// Estado  para almacenar los campos que llegan de los inputs
 
+  // función  que  se ejecuta cuando se realiza submit  el cual  valida  los campos  y  devuelve los datos del formulario a el componente padre
   const handleSubmit = (event) => {
     const isValid = validateHandler(event);
-    setDataInput({...dataInput, ["Subtotal"]:parseFloat( dataInput.Cantidad *  dataInput["Valor Unitario"]).toFixed(2)});
     returnData(dataInput)
-    setCount(count + 1)
     setValidated(isValid);
   };
   return (

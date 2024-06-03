@@ -1,6 +1,19 @@
-import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
 import {Col,Form,Row} from 'react-bootstrap';
+
+/**
+ * InputInvoice Component
+ *
+ * Este componente genera inputs basado en el objeto que recibe como prop.
+ * Divide los campos del formulario en filas de 2 columnas si es posible.
+ * 
+ * Props:
+ * - object: Un objeto que contiene los detalles de los campos del formulario.
+ * - onChange: Una función que se llama cuando cambia el valor de un campo del formulario.
+ * 
+ * Ejemplo de uso:
+ * <InputInvoice object={formObject} onChange={handleInputChange} />
+ */
 
 const InputInvoice =({object,onChange})=>{
   object=Object.values(object);
