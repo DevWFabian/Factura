@@ -1,0 +1,52 @@
+{
+  "invoice_number":{
+    "label":{
+      "text":"Número de Factura:"
+    },
+    "input":{
+      "type":"text",
+      "placeholder":"Número de Factura",
+      "id":"input-invoice-number"
+    }
+  },
+  "customer_name":{
+    "label":{
+      "text":"Nombre del Cliente:"
+    },
+    "input":{
+      "type":"text",
+      "placeholder":"Nombre del Cliente",
+      "id":"input-customer-name"
+    }
+  },
+  "id_number":{
+    "label":{
+      "text":"Cédula:"
+    },
+    "input":{
+      "type":"text",
+      "placeholder":"Cédula",
+      "id":"input-id-number"
+    }
+  },
+  "phone":{
+    "label":{
+      "text":"Teléfono:"
+    },
+    "input":{
+      "type":"text",
+      "placeholder":"Teléfono",
+      "id":"input-phone"
+    }
+  },
+  "email":{
+    "label":{
+      "text":"Correo:"
+    },
+    "input":{
+      "type":"text",
+      "placeholder":"Correo",
+      "id":"input-email"
+    }
+  }
+}

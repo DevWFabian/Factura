@@ -1,0 +1,33 @@
+
+{
+  "id_product":{
+    "input":{
+      "type":"number",
+      "placeholder":"ID Producto",
+      "id":"input-id-product"
+    }
+  },
+  "description":{
+    "input":{
+      "type":"text",
+      "placeholder":"Descripción",
+      "id":"input-description"
+    }
+  },
+  "unit_value":{
+    "input":{
+      "type":"number",
+      "placeholder":"Valor Unitario",
+      "id":"input-unit-value"
+    }
+  },
+  "quantity":{
+    "input":{
+      "type":"number",
+      "placeholder":"Cantidad",
+      "id":"input-quantity"
+    }
+  }
+
+
+}

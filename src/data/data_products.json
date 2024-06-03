@@ -1,0 +1,13 @@
+{
+  "invoice_products":[{
+    "ID Producto": "10",
+    "Descripción": "camisa",
+    "Valor Unitario": "1000.00",
+    "Cantidad": "3"
+  },{
+    "ID Producto": "20",
+    "Descripción": "pantalon",
+    "Valor Unitario": "2000.00",
+    "Cantidad": "4"
+  }]
+}
