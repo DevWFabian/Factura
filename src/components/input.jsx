@@ -29,7 +29,7 @@ const InputInvoice =({object,onChange})=>{
       {
         row.map((field)=>(
           <Form.Group as={Col} className="mb-3" controlId={field.input.placeholder} key={field.input.id}>
-            {field.label?(<Form.Label className='fw-bold'>{field.label.text}</Form.Label>):""}
+            {field.label?(<Form.Label >{field.label.text}</Form.Label>):""}
             <Form.Control
             required
             type={field.input.type}

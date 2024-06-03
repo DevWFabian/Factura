@@ -1,4 +1,15 @@
 
+
+
+.container-app{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row-container{
+  min-width: 20rem;
+  width: 50rem;
+}
 .table-header{
   background-color: #f2f2f2;
 }

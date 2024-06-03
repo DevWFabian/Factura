@@ -21,13 +21,13 @@ function App() {
   const total = subtotal + iva
   return (
     <div className="App"> 
-      <Container className='p-5'>
-        <Row className='mx-5 p-5'>
+      <Container className='container-app' fluid>
+        <Row lg={1} className=' mt-5 row-container'>
           <CreateCard title="Factura">
             <InputInvoice object={dataCustomer}></InputInvoice>
             <FormExample object={dataProduct} returnData={getDataArray(formData,setFormData)}></FormExample>
             <TableProducts object ={formData} returnData={deleteDataArray(formData,setFormData)}></TableProducts>
-            <Row lg={1} className='text-end border'>
+            <Row lg={1} className='text-end'>
               <Col>
                 <span>Subtotal: ${subtotal.toFixed(2)}</span>  
               </Col>
