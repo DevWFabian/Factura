@@ -4,7 +4,7 @@ import {CreateCard,FormExample,InputInvoice,TableProducts} from "./components/in
 import {Row,Container,Col} from 'react-bootstrap';
 //son los json que contienen la data para crear los inputs de los form y tambien  esta la data que inicia con dos productos para la tabla
 import { dataCustomer,dataProduct,dataTableProduct } from './data/index.js';
-import {GetDataObject,getDataArray,deleteDataArray} from "./services/getData.jsx"
+import {getDataArray,deleteDataArray} from "./services/getData.jsx"
  
 /**
  * App Component
